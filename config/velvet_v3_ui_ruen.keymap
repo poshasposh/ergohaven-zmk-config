@@ -140,10 +140,10 @@
         sym_ru {
             display-name = "sym_ru";
             bindings = <
-&trans  &en HASH          &en LT    &kp EQUAL     &en GT       &en GRAVE                    &kp QUESTION  &kp RU_DQT  &kp UNDER    &en SQT   &en CARET  &trans
-&trans  &kp RU_BACKSLASH  &kp LPAR  &kp MINUS     &kp RPAR     &kp PLUS                     &kp PRCNT     &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL   &trans
-&trans  &kp RU_NUMERO     &kp STAR  &kp RU_COLON  &kp RU_FSLH  &en DLLR                     &en AT        &en PIPE    &en TILDE    &en AMPS  &trans     &trans
-                          &trans    &trans        &trans       &mo 5      &trans    &trans  &trans        &trans      &en LBKT     &en RBKT
+&trans  &trans         &en LEFT_BRACKET  &kp EQUAL  &en LESS_THAN  &en TILDE                        &kp QUESTION  &kp RU_DQT  &kp UNDER    &en SQT   &en CARET  &trans
+&trans  &en SEMI       &kp LPAR          &kp DQT    &kp RPAR       &kp PLUS                         &kp PRCNT     &en LBRC    &kp RU_SEMI  &kp RBRC  &kp EXCL   &trans
+&trans  &kp RU_NUMERO  &en DOLLAR        &en PIPE   &kp RU_FSLH    &en AMPERSAND                    &en AT        &en PIPE    &en TILDE    &en AMPS  &trans     &trans
+                       &trans            &trans     &trans         &mo 5          &trans    &trans  &trans        &trans      &en LBKT     &en RBKT
             >;
         };
 
