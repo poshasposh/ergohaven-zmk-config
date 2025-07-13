@@ -128,10 +128,10 @@
 
         sym {
             bindings = <
-&trans  &none          &kp LEFT_BRACKET  &kp AT_SIGN  &kp LESS_THAN  &kp TILDE                        &kp SQT    &kp GREATER_THAN  &kp RU_UNDERSCORE  &kp RIGHT_BRACKET  &none      &trans
+&trans  &trans         &kp LEFT_BRACKET  &kp AT_SIGN  &kp LESS_THAN  &kp TILDE                        &kp SQT    &kp GREATER_THAN  &kp RU_UNDERSCORE  &kp RIGHT_BRACKET  &kp GRAVE  &trans
 &trans  &kp SEMI       &kp LPAR          &kp DQT      &kp EXCL       &kp PLUS                         &kp MINUS  &kp QMARK         &kp EQUAL          &kp RPAR           &kp COLON  &trans
-&trans  &ru RU_NUMERO  &kp DOLLAR        &kp PIPE     &kp FSLH       &kp AMPERSAND                    &kp CARET  &kp NUBS          &kp GRAVE          &kp PRCNT          &kp HASH   &trans
-                       &none             &trans       &trans         &mo 5          &trans    &trans  &trans     &trans            &none              &none
+&trans  &ru RU_NUMERO  &kp DOLLAR        &kp PIPE     &kp FSLH       &kp AMPERSAND                    &kp CARET  &kp RU_ASTERISK   &kp NUBS           &kp PRCNT          &kp HASH   &trans
+                       &trans            &trans       &trans         &mo 5          &trans    &trans  &trans     &trans            &trans             &trans
             >;
 
             display-name = "sym";
