@@ -97,8 +97,8 @@
         en {
             bindings = <
 &kp ESC   &kp DELETE  &kp F     &kp COMMA  &kp DOT    &kp Y                        &kp G  &kp R           &kp W     &kp C    &kp BACKSPACE  &layer_ru
-&kp TAB   &kp U       &kp I     &kp A      &kp E      &kp O                        &kp D  &kp T           &kp M     &kp N    &kp H          &kp Z
-&kp CAPS  &kp LSHIFT  &kp X     &kp K      &kp S      &kp B                        &kp P  &kp L           &kp V     &kp J    &kp Q          &kp INS
+&kp TAB   &kp U       &kp I     &kp A      &kp E      &kp O                        &kp D  &kp T           &kp M     &kp N    &kp H          &kp Q
+&kp CAPS  &kp LSHIFT  &kp X     &kp K      &kp S      &kp B                        &kp P  &kp L           &kp V     &kp J    &kp RSHFT      &kp INS
                       &kp LWIN  &kp LALT   &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
             >;
 
@@ -110,7 +110,7 @@
             bindings = <
 &kp ESC   &kp DELETE         &kp RU_CYRILLIC_YERU  &kp RU_COMMA        &kp RU_DOT          &kp RU_CYRILLIC_SOFT_SIGN                        &kp RU_CYRILLIC_KA   &kp RU_CYRILLIC_EL  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_DE       &kp BACKSPACE       &layer_en
 &kp TAB   &kp RU_CYRILLIC_U  &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_IE  &kp RU_CYRILLIC_O   &kp RU_CYRILLIC_A                                &kp RU_CYRILLIC_ES   &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_ER       &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_IO
-&kp CAPS  &kp LSHFT          &kp RU_CYRILLIC_E     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_YA  &kp RU_CYRILLIC_ZE                               &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_SHORT_I  &trans              &kp INS
+&kp CAPS  &kp LSHFT          &kp RU_CYRILLIC_E     &kp RU_CYRILLIC_YU  &kp RU_CYRILLIC_YA  &kp RU_CYRILLIC_ZE                               &kp RU_CYRILLIC_GHE  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_BE  &kp RU_CYRILLIC_SHORT_I  &kp RSHFT           &kp INS
                              &kp LEFT_WIN          &kp LEFT_ALT        &kp LCTRL           &mo 2                      &kp SPACE    &kp RET  &mo 4                &cap_sen 6 MB1      &kp HOME            &kp END
             >;
         };
@@ -118,7 +118,7 @@
         nav {
             bindings = <
 &trans  &trans  &kp N1  &kp N2  &kp N3  &trans                    &trans               &kp LEFT               &kp UP               &kp DOWN                   &kp RIGHT           &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &kp N0                    &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_CHE    &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_TSE        &kp RU_CYRILLIC_EF  &trans
+&trans  &kp Z   &kp N4  &kp N5  &kp N6  &kp N0                    &kp RU_CYRILLIC_SHA  &kp RU_CYRILLIC_CHE    &kp RU_CYRILLIC_HA   &kp RU_CYRILLIC_TSE        &kp RU_CYRILLIC_EF  &trans
 &trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &trans               &kp RU_CYRILLIC_SHCHA  &kp RU_CYRILLIC_ZHE  &kp RU_CYRILLIC_HARD_SIGN  &trans              &trans
                 &trans  &trans  &trans  &trans  &trans    &trans  &mo 5                &trans                 &trans               &trans
             >;
