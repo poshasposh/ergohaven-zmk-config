@@ -115,7 +115,7 @@
         ru_U_che: ru_U_che {
             compatible = "zmk,behavior-mod-morph";
             label = "RU_U_CHE";
-            bindings = <&kp RU_CYRILLIC_U>, <&kp RU_CYRILLIC_CHE>;
+            bindings = <&kp RU_CYRILLIC_U>, <&kp LC(RU_CYRILLIC_CHE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -124,7 +124,7 @@
         ru_e_em: ru_e_em {
             compatible = "zmk,behavior-mod-morph";
             label = "RU_E_EM";
-            bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_EM>;
+            bindings = <&kp RU_CYRILLIC_IE>, <&kp LC(RU_CYRILLIC_EM)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -133,7 +133,7 @@
         ru_o_es: ru_o_es {
             compatible = "zmk,behavior-mod-morph";
             label = "RU_O_ES";
-            bindings = <&kp RU_CYRILLIC_O>, <&kp RU_CYRILLIC_ES>;
+            bindings = <&kp RU_CYRILLIC_O>, <&kp LC(RU_CYRILLIC_ES)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -142,7 +142,7 @@
         ru_a_ya: ru_a_ya {
             compatible = "zmk,behavior-mod-morph";
             label = "RU_A_YA";
-            bindings = <&kp RU_CYRILLIC_A>, <&kp RU_CYRILLIC_YA>;
+            bindings = <&kp RU_CYRILLIC_A>, <&kp LC(RU_CYRILLIC_YA)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
