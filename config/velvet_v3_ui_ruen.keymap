@@ -56,15 +56,6 @@
             mods = <(MOD_LCTL)>;
         };
 
-        U_ALT_TAB: U_ALT_TAB {
-            compatible = "zmk,behavior-mod-morph";
-            label = "U_ALT_TAB";
-            bindings = <&kp U>, <&kp LA(TAB)>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
-        };
-
         F_Ctrl_left: F_Ctrl_left {
             compatible = "zmk,behavior-mod-morph";
             label = "F_CTRL_LEFT";
@@ -99,6 +90,15 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
+        };
+
+        U_tab: U_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_TAB";
+            bindings = <&kp U>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT)>;
         };
     };
 
@@ -191,10 +191,10 @@
 
         en {
             bindings = <
-&kp ESC   &kp DELETE  &F_Ctrl_left  &comma_Ctrl_up  &dot_Ctrl_down  &Y_Ctrl_right                        &kp G  &kp R           &kp W     &kp C    &kp BACKSPACE  &layer_ru
-&kp TAB   &U_ALT_TAB  &I_Ctrl_X     &A_Ctrl_V       &E_Ctrl_C       &O_Ctrl_Z                            &kp D  &kp T           &kp M     &kp N    &kp H          &kp Q
-&kp CAPS  &kp LSHIFT  &kp X         &kp K           &kp S           &kp B                                &kp P  &kp L           &kp V     &kp J    &kp RSHFT      &kp INS
-                      &kp LWIN      &kp LALT        &kp LCTRL       &mo 2          &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
+&kp ESC   &kp DELETE  &F_Ctrl_left  &comma_Ctrl_up  &dot_Ctrl_down  &Y_Ctrl_right                                 &kp G  &kp R           &kp W     &kp C    &kp BACKSPACE  &layer_ru
+&kp TAB   &U_tab      &I_Ctrl_X     &A_Ctrl_V       &E_Ctrl_C       &O_Ctrl_Z                                     &kp D  &kp T           &kp M     &kp N    &kp H          &kp Q
+&kp CAPS  &kp LSHIFT  &kp X         &kp K           &kp S           &kp B                                         &kp P  &kp L           &kp V     &kp J    &kp RSHFT      &kp INS
+                      &kp LWIN      &kp LALT        &kp LCTRL       &mo 2          &mt LEFT_ALT SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
             >;
 
             display-name = "Base";
