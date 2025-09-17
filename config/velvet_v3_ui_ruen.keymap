@@ -101,6 +101,88 @@
             mods = <(MOD_LCTL|MOD_LALT)>;
             keep-mods = <(MOD_LCTL|MOD_LALT)>;
         };
+
+        ru_ya_tab: ru_ya_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_YA_TAB";
+            bindings = <&kp RU_CYRILLIC_YA>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL|MOD_LALT)>;
+            keep-mods = <(MOD_LCTL|MOD_LALT)>;
+        };
+
+        ru_U_che: ru_U_che {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_U_CHE";
+            bindings = <&kp RU_CYRILLIC_U>, <&kp RU_CYRILLIC_CHE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        ru_e_em: ru_e_em {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_E_EM";
+            bindings = <&kp RU_CYRILLIC_IE>, <&kp RU_CYRILLIC_EM>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        ru_o_es: ru_o_es {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_O_ES";
+            bindings = <&kp RU_CYRILLIC_O>, <&kp RU_CYRILLIC_ES>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        ru_a_ya: ru_a_ya {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_A_YA";
+            bindings = <&kp RU_CYRILLIC_A>, <&kp RU_CYRILLIC_YA>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        ru_left: ru_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_LEFT";
+            bindings = <&kp RU_CYRILLIC_YERU>, <&kp LC(LEFT_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        ru_comma_up: ru_comma_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_COMMA_UP";
+            bindings = <&kp RU_COMMA>, <&kp LC(UP)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        ru_dot_down: ru_dot_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_DOT_DOWN";
+            bindings = <&kp RU_DOT>, <&kp LC(DOWN)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        ru_u_right: ru_u_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RU_U_RIGHT";
+            bindings = <&kp RU_CYRILLIC_YU>, <&kp LC(RIGHT)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     combos {
@@ -204,10 +286,10 @@
         ru {
             display-name = "Ru";
             bindings = <
-&kp ESC   &kp DELETE          &kp RU_CYRILLIC_YERU  &kp RU_COMMA               &kp RU_DOT         &kp RU_CYRILLIC_YU                        &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_EM   &kp BACKSPACE       &layer_en
-&kp TAB   &kp RU_CYRILLIC_YA  &kp RU_CYRILLIC_U     &kp RU_CYRILLIC_IE         &kp RU_CYRILLIC_O  &kp RU_CYRILLIC_A                         &kp RU_CYRILLIC_EL         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_KA   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_IO
-&kp CAPS  &kp LSHFT           &kp RU_CYRILLIC_ZE    &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_E                         &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_GHE  &kp RSHFT           &kp INS
-                              &kp LEFT_WIN          &kp LEFT_ALT               &kp LCTRL          &mo 2               &kp SPACE    &kp RET  &mo 4                      &cap_sen 6 MB1      &kp HOME            &kp END
+&kp ESC   &kp DELETE  &ru_left            &ru_comma_up               &ru_dot_down       &ru_u_right                              &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_EM   &kp BACKSPACE       &layer_en
+&kp TAB   &ru_ya_tab  &ru_U_che           &ru_e_em                   &ru_o_es           &ru_a_ya                                 &kp RU_CYRILLIC_EL         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_KA   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_IO
+&kp CAPS  &kp LSHFT   &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_E                        &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_GHE  &kp RSHFT           &kp INS
+                      &kp LEFT_WIN        &kp LEFT_ALT               &kp LCTRL          &mo 2              &kp SPACE    &kp RET  &mo 4                      &cap_sen 6 MB1      &kp HOME            &kp END
             >;
         };
 
