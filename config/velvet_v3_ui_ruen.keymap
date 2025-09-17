@@ -19,6 +19,15 @@
             tapping-term-ms = <150>;
             hold-while-undecided;
         };
+
+        Ctrl_E_Ctrl_C: Ctrl_E_Ctrl_C {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CTRL_E_CTRL_C";
+            bindings = <&kp E>, <&kp LC(C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     combos {
@@ -110,10 +119,10 @@
 
         en {
             bindings = <
-&kp ESC   &kp DELETE  &kp F     &kp COMMA  &kp DOT    &kp Y                        &kp G  &kp R           &kp W     &kp C    &kp BACKSPACE  &layer_ru
-&kp TAB   &kp U       &kp I     &kp A      &kp E      &kp O                        &kp D  &kp T           &kp M     &kp N    &kp H          &kp Q
-&kp CAPS  &kp LSHIFT  &kp X     &kp K      &kp S      &kp B                        &kp P  &kp L           &kp V     &kp J    &kp RSHFT      &kp INS
-                      &kp LWIN  &kp LALT   &kp LCTRL  &mo 2  &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
+&kp ESC   &kp DELETE  &kp F     &kp COMMA  &kp DOT         &kp Y                        &kp G  &kp R           &kp W     &kp C    &kp BACKSPACE  &layer_ru
+&kp TAB   &kp U       &kp I     &kp A      &Ctrl_E_Ctrl_C  &kp O                        &kp D  &kp T           &kp M     &kp N    &kp H          &kp Q
+&kp CAPS  &kp LSHIFT  &kp X     &kp K      &kp S           &kp B                        &kp P  &kp L           &kp V     &kp J    &kp RSHFT      &kp INS
+                      &kp LWIN  &kp LALT   &kp LCTRL       &mo 2  &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
             >;
 
             display-name = "Base";
