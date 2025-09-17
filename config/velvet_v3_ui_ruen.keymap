@@ -20,10 +20,82 @@
             hold-while-undecided;
         };
 
-        Ctrl_E_Ctrl_C: Ctrl_E_Ctrl_C {
+        E_Ctrl_C: E_Ctrl_C {
             compatible = "zmk,behavior-mod-morph";
-            label = "CTRL_E_CTRL_C";
+            label = "E_CTRL_C";
             bindings = <&kp E>, <&kp LC(C)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        A_Ctrl_V: A_Ctrl_V {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_CTRL_V";
+            bindings = <&kp A>, <&kp LC(V)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        I_Ctrl_X: I_Ctrl_X {
+            compatible = "zmk,behavior-mod-morph";
+            label = "I_CTRL_X";
+            bindings = <&kp I>, <&kp LC(X)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        O_Ctrl_Z: O_Ctrl_Z {
+            compatible = "zmk,behavior-mod-morph";
+            label = "O_CTRL_Z";
+            bindings = <&kp O>, <&kp LC(Z)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        U_ALT_TAB: U_ALT_TAB {
+            compatible = "zmk,behavior-mod-morph";
+            label = "U_ALT_TAB";
+            bindings = <&kp U>, <&kp LA(TAB)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        F_Ctrl_left: F_Ctrl_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "F_CTRL_LEFT";
+            bindings = <&kp F>, <&kp LC(LEFT_ARROW)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        comma_Ctrl_up: comma_Ctrl_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_CTRL_UP";
+            bindings = <&kp COMMA>, <&kp LC(UP)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        dot_Ctrl_down: dot_Ctrl_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOT_CTRL_DOWN";
+            bindings = <&kp DOT>, <&kp LC(DOWN)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        Y_Ctrl_right: Y_Ctrl_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Y_CTRL_RIGHT";
+            bindings = <&kp Y>, <&kp LC(RIGHT)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
@@ -119,10 +191,10 @@
 
         en {
             bindings = <
-&kp ESC   &kp DELETE  &kp F     &kp COMMA  &kp DOT         &kp Y                        &kp G  &kp R           &kp W     &kp C    &kp BACKSPACE  &layer_ru
-&kp TAB   &kp U       &kp I     &kp A      &Ctrl_E_Ctrl_C  &kp O                        &kp D  &kp T           &kp M     &kp N    &kp H          &kp Q
-&kp CAPS  &kp LSHIFT  &kp X     &kp K      &kp S           &kp B                        &kp P  &kp L           &kp V     &kp J    &kp RSHFT      &kp INS
-                      &kp LWIN  &kp LALT   &kp LCTRL       &mo 2  &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
+&kp ESC   &kp DELETE  &F_Ctrl_left  &comma_Ctrl_up  &dot_Ctrl_down  &Y_Ctrl_right                        &kp G  &kp R           &kp W     &kp C    &kp BACKSPACE  &layer_ru
+&kp TAB   &U_ALT_TAB  &I_Ctrl_X     &A_Ctrl_V       &E_Ctrl_C       &O_Ctrl_Z                            &kp D  &kp T           &kp M     &kp N    &kp H          &kp Q
+&kp CAPS  &kp LSHIFT  &kp X         &kp K           &kp S           &kp B                                &kp P  &kp L           &kp V     &kp J    &kp RSHFT      &kp INS
+                      &kp LWIN      &kp LALT        &kp LCTRL       &mo 2          &kp SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
             >;
 
             display-name = "Base";
