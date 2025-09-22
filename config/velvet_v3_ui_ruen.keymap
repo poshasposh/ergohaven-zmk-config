@@ -295,10 +295,10 @@
 
         nav {
             bindings = <
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans                    &trans              &kp LEFT                 &kp UP               &kp DOWN               &kp RIGHT            &trans
-&trans  &kp Z   &kp N4  &kp N5  &kp N6  &kp N0                    &kp RU_CYRILLIC_HA  &kp RU_CYRILLIC_BE       &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_SHA  &none
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                    &trans              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_SHCHA  &trans               &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &mo 5               &trans                   &trans               &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp PRINTSCREEN                    &trans              &kp LEFT                 &kp UP               &kp DOWN               &kp RIGHT            &trans
+&trans  &kp Z   &kp N4  &kp N5  &kp N6  &kp N0                             &kp RU_CYRILLIC_HA  &kp RU_CYRILLIC_BE       &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_SHA  &none
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                             &trans              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_SHCHA  &trans               &trans
+                &trans  &trans  &trans  &trans           &trans    &trans  &mo 5               &trans                   &trans               &trans
             >;
 
             display-name = "Navigation";
