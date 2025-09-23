@@ -336,7 +336,7 @@
             display-name = "Symbols";
             bindings = <
 &trans  &en LEFT_BRACE    &en LEFT_BRACKET      &en SQT   &en LESS_THAN  &en TILDE                        &en AT_SIGN   &kp GREATER_THAN  &kp UNDER         &en RIGHT_BRACKET  &en RIGHT_BRACE  &en GRAVE
-&trans  &kp RU_SEMICOLON  &kp RU_DOUBLE_QUOTES  &kp LPAR  &kp QMARK      &kp RU_PLUS                      &kp RU_MINUS  &kp RU_EQUAL      &kp RPAR          &kp COLON          &kp EXCL         &trans
+&trans  &kp RU_SEMICOLON  &kp RU_DOUBLE_QUOTES  &kp LPAR  &kp QMARK      &kp RU_PLUS                      &kp RU_MINUS  &kp RU_EQUAL      &kp RPAR          &kp COLON          &kp EXCL         &none
 &trans  &kp RU_NUMERO     &en DOLLAR            &en PIPE  &kp RU_FSLH    &en AMPERSAND                    &en CARET     &kp RU_ASTERISK   &kp RU_BACKSLASH  &kp RU_PERCENT     &en HASH         &trans
                           &trans                &trans    &trans         &mo 6          &trans    &trans  &trans        &trans            &trans            &trans
             >;
