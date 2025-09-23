@@ -272,36 +272,52 @@
     keymap {
         compatible = "zmk,keymap";
 
-        en {
+        BASE_EN {
             bindings = <
 &kp ESC   &kp DELETE  &J_Ctrl_left  &comma_Ctrl_up  &dot_Ctrl_down  &Y_Ctrl_right                                 &kp F  &kp R           &kp W     &kp M    &kp BACKSPACE  &layer_ru
 &kp TAB   &I_tab      &U_Ctrl_X     &E_Ctrl_V       &O_Ctrl_C       &A_Ctrl_Z                                     &kp L  &kp N           &kp T     &kp K    &kp D          &kp Q
 &kp CAPS  &kp LSHIFT  &kp Z         &kp C           &kp H           &kp B                                         &kp V  &kp S           &kp P     &kp G    &kp RSHFT      &kp INS
-                      &kp LWIN      &kp LALT        &kp LCTRL       &mo 2          &mt LEFT_ALT SPACE    &kp RET  &mo 3  &cap_sen 6 MB1  &kp HOME  &kp END
+                      &kp LWIN      &kp LALT        &kp LCTRL       &mo 2          &mt LEFT_ALT SPACE    &kp RET  &mo 4  &cap_sen 7 MB1  &kp HOME  &kp END
             >;
 
             display-name = "Base";
+            label = "BASE_EN";
         };
 
-        ru {
+        BASE_RU {
             display-name = "Ru";
             bindings = <
 &kp ESC   &kp DELETE  &ru_left            &ru_comma_up               &ru_dot_down       &ru_u_right                                          &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_EM   &kp BACKSPACE       &layer_en
 &kp TAB   &ru_ya_tab  &ru_U_che           &ru_e_em                   &ru_o_es           &ru_a_ya                                             &kp RU_CYRILLIC_EL         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_KA   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_IO
 &kp CAPS  &kp LSHFT   &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_E                                    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_GHE  &kp RSHFT           &kp INS
-                      &kp LEFT_WIN        &kp LEFT_ALT               &kp LCTRL          &mo 2              &mt LEFT_ALT RU_SPACE    &kp RET  &mo 4                      &cap_sen 6 MB1      &kp HOME            &kp END
+                      &kp LEFT_WIN        &kp LEFT_ALT               &kp LCTRL          &mo 2              &mt LEFT_ALT RU_SPACE    &kp RET  &mo 5                      &cap_sen 7 MB1      &kp HOME            &kp END
             >;
+
+            label = "BASE_RU";
         };
 
-        nav {
+        nav_ru {
             bindings = <
 &trans  &trans  &kp N1  &kp N2  &kp N3  &kp PRINTSCREEN                    &kp LEFT_ARROW      &kp UP                   &kp DOWN             &kp RIGHT              &trans               &none
-&trans  &kp X   &kp N4  &kp N5  &kp N6  &kp N0                             &kp RU_CYRILLIC_HA  &kp RU_CYRILLIC_BE       &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_SHA  &none
+&trans  &none   &kp N4  &kp N5  &kp N6  &kp N0                             &kp RU_CYRILLIC_HA  &kp RU_CYRILLIC_BE       &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_SHA  &none
 &trans  &trans  &kp N7  &kp N8  &kp N9  &trans                             &trans              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_SHCHA  &trans               &trans
-                &trans  &trans  &trans  &trans           &trans    &trans  &mo 5               &trans                   &trans               &trans
+                &trans  &trans  &trans  &trans           &trans    &trans  &mo 6               &trans                   &trans               &trans
             >;
 
-            display-name = "Navigation";
+            display-name = "Navigation RU";
+            label = "Navigation_RU";
+        };
+
+        nav_en {
+            display-name = "Navigation RU";
+            bindings = <
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp PRINTSCREEN                    &kp LEFT_ARROW      &kp UP                   &kp DOWN             &kp RIGHT              &trans               &none
+&trans  &kp X   &kp N4  &kp N5  &kp N6  &kp N0                             &kp RU_CYRILLIC_HA  &kp B                    &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_SHA  &none
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                             &trans              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_SHCHA  &trans               &trans
+                &trans  &trans  &trans  &trans           &trans    &trans  &mo 6               &trans                   &trans               &trans
+            >;
+
+            label = "Navigation_EN";
         };
 
         sym_en {
@@ -309,10 +325,11 @@
 &trans  &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp AT_SIGN  &kp LESS_THAN  &kp TILDE                        &kp SQT    &kp GREATER_THAN  &kp RU_UNDERSCORE  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp GRAVE
 &trans  &kp SEMI        &kp LPAR          &kp DQT      &kp EXCL       &kp PLUS                         &kp MINUS  &kp QMARK         &kp EQUAL          &kp RPAR           &kp COLON        &none
 &trans  &ru RU_NUMERO   &kp DOLLAR        &kp PIPE     &kp FSLH       &kp AMPERSAND                    &kp CARET  &kp RU_ASTERISK   &kp NUBS           &kp PRCNT          &kp HASH         &trans
-                        &trans            &trans       &trans         &mo 5          &trans    &trans  &trans     &trans            &trans             &trans
+                        &trans            &trans       &trans         &mo 6          &trans    &trans  &trans     &trans            &trans             &trans
             >;
 
             display-name = "Symbols";
+            label = "sym_en";
         };
 
         sym_ru {
@@ -321,8 +338,10 @@
 &trans  &en LEFT_BRACE    &en LEFT_BRACKET         &en AT_SIGN           &en LESS_THAN       &en TILDE                        &en SQT       &kp GREATER_THAN  &kp UNDER         &en RIGHT_BRACKET         &en RIGHT_BRACE  &en GRAVE
 &trans  &kp RU_SEMICOLON  &kp RU_LEFT_PARENTHESIS  &kp RU_DOUBLE_QUOTES  &kp RU_EXCLAMATION  &kp RU_PLUS                      &kp RU_MINUS  &kp RU_QUESTION   &kp RU_EQUAL      &kp RU_RIGHT_PARENTHESIS  &kp RU_COLON     &trans
 &trans  &kp RU_NUMERO     &en DOLLAR               &en PIPE              &kp RU_FSLH         &en AMPERSAND                    &en CARET     &kp RU_ASTERISK   &kp RU_BACKSLASH  &kp RU_PERCENT            &en HASH         &trans
-                          &trans                   &trans                &trans              &mo 5          &trans    &trans  &trans        &trans            &trans            &trans
+                          &trans                   &trans                &trans              &mo 6          &trans    &trans  &trans        &trans            &trans            &trans
             >;
+
+            label = "sym_ru";
         };
 
         adj {
@@ -339,7 +358,7 @@
         mouse {
             bindings = <
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &mo 7   &mkp MB3  &mkp MB2  &mkp MB1  &mo 8                     &mo 8   &mkp MB1  &mkp MB2  &mkp MB3  &mo 7   &trans
+&trans  &mo 8   &mkp MB3  &mkp MB2  &mkp MB1  &mo 9                     &mo 9   &mkp MB1  &mkp MB2  &mkp MB3  &mo 8   &trans
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
