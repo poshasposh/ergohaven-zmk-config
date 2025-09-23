@@ -290,34 +290,34 @@
 &kp ESC   &kp DELETE  &ru_left            &ru_comma_up               &ru_dot_down       &ru_u_right                                          &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_EM   &kp BACKSPACE       &layer_en
 &kp TAB   &ru_ya_tab  &ru_U_che           &ru_e_em                   &ru_o_es           &ru_a_ya                                             &kp RU_CYRILLIC_EL         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_KA   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_IO
 &kp CAPS  &kp LSHFT   &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_E                                    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_GHE  &kp RSHFT           &kp INS
-                      &kp LEFT_WIN        &kp LEFT_ALT               &kp LCTRL          &mo 2              &mt LEFT_ALT RU_SPACE    &kp RET  &mo 5                      &cap_sen 7 MB1      &kp HOME            &kp END
+                      &kp LEFT_WIN        &kp LEFT_ALT               &kp LCTRL          &mo 3              &mt LEFT_ALT RU_SPACE    &kp RET  &mo 5                      &cap_sen 7 MB1      &kp HOME            &kp END
             >;
 
             label = "BASE_RU";
+        };
+
+        nav_en {
+            display-name = "Navigation RU";
+            bindings = <
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp PRINTSCREEN                    &kp LEFT_ARROW  &kp UP  &kp DOWN  &kp RIGHT  &trans  &none
+&trans  &none   &kp N4  &kp N5  &kp N6  &kp N0                             &kp X           &none   &none     &none      &none   &none
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                             &trans          &none   &none     &none      &trans  &trans
+                &trans  &trans  &trans  &trans           &trans    &trans  &mo 6           &trans  &trans    &trans
+            >;
+
+            label = "Navigation_EN";
         };
 
         nav_ru {
             bindings = <
 &trans  &trans  &kp N1  &kp N2  &kp N3  &kp PRINTSCREEN                    &kp LEFT_ARROW      &kp UP                   &kp DOWN             &kp RIGHT              &trans               &none
 &trans  &none   &kp N4  &kp N5  &kp N6  &kp N0                             &kp RU_CYRILLIC_HA  &kp RU_CYRILLIC_BE       &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_SHA  &none
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                             &trans              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_SHCHA  &trans               &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &none                              &trans              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_SHCHA  &trans               &trans
                 &trans  &trans  &trans  &trans           &trans    &trans  &mo 6               &trans                   &trans               &trans
             >;
 
             display-name = "Navigation RU";
             label = "Navigation_RU";
-        };
-
-        nav_en {
-            display-name = "Navigation RU";
-            bindings = <
-&trans  &trans  &kp N1  &kp N2  &kp N3  &kp PRINTSCREEN                    &kp LEFT_ARROW      &kp UP                   &kp DOWN             &kp RIGHT              &trans               &none
-&trans  &kp X   &kp N4  &kp N5  &kp N6  &kp N0                             &kp RU_CYRILLIC_HA  &kp B                    &kp RU_CYRILLIC_CHE  &kp RU_CYRILLIC_ZHE    &kp RU_CYRILLIC_SHA  &none
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans                             &trans              &kp RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE  &kp RU_CYRILLIC_SHCHA  &trans               &trans
-                &trans  &trans  &trans  &trans           &trans    &trans  &mo 6               &trans                   &trans               &trans
-            >;
-
-            label = "Navigation_EN";
         };
 
         sym_en {
