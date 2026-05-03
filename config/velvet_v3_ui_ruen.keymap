@@ -148,9 +148,9 @@
             mods = <(MOD_LCTL)>;
         };
 
-        ru_left: ru_left {
+        ru_bI_left: ru_bI_left {
             compatible = "zmk,behavior-mod-morph";
-            label = "RU_LEFT";
+            label = "RU_BI_LEFT";
             bindings = <&kp RU_CYRILLIC_YERU>, <&kp LC(LEFT_ARROW)>;
 
             #binding-cells = <0>;
@@ -287,7 +287,7 @@
         BASE_RU {
             display-name = "Ru";
             bindings = <
-&kp ESC   &kp DELETE  &ru_left            &ru_comma_up               &ru_dot_down       &ru_yu_right                                         &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_EM   &kp BACKSPACE       &layer_en
+&kp ESC   &kp DELETE  &ru_bI_left         &ru_comma_up               &ru_dot_down       &ru_yu_right                                         &kp RU_CYRILLIC_EF         &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_VE  &kp RU_CYRILLIC_EM   &kp BACKSPACE       &layer_en
 &kp TAB   &ru_ya_tab  &ru_U_che           &ru_e_em                   &ru_o_es           &ru_a_ya                                             &kp RU_CYRILLIC_EL         &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_KA   &kp RU_CYRILLIC_DE  &kp RU_CYRILLIC_IO
 &kp CAPS  &kp LSHFT   &kp RU_CYRILLIC_ZE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_I  &kp RU_CYRILLIC_E                                    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_PE  &kp RU_CYRILLIC_GHE  &kp RSHFT           &kp INS
                       &kp LEFT_WIN        &kp LEFT_ALT               &kp LCTRL          &mo 3              &mt LEFT_ALT RU_SPACE    &kp RET  &mo 5                      &cap_sen 7 MB1      &kp HOME            &kp END
